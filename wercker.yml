@@ -19,5 +19,6 @@ build:
     - script:
         name: build
         code: |
+          cd webapp1
           dotnet restore
           dotnet build
