@@ -1,0 +1,12 @@
+app:
+  build:
+    image: microsoft/dotnet:1.1.1-sdk
+    dockerfile_path: Dockerfile
+  environment:
+    SECRET_TOKEN: abcdefghij
+    REDIS_ADDRESS: redis://redis:6379
+    RAILS_ENV: test
+    DATABASE_HOST: postgresql
+  cached: true
+  volumes:
+    - ./:/code
