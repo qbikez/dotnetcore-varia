@@ -2,4 +2,6 @@
 #  encrypted_dockercfg_path: dockercfg.encrypted
   steps:
   - service: app
-    command: ./webapp1/build.sh
+    command: ls -al
+  - service: app
+    command: ./code/webapp1/build.sh
