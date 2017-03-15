@@ -1,7 +1,9 @@
-- type: parallel
+- type: serial
 #  encrypted_dockercfg_path: dockercfg.encrypted
   steps:
   - service: app
     command: ls -al
   - service: app
-    command: chmod u+x ./code/webapp1/build.sh && ./code/webapp1/build.sh
+    command: chmod u+x ./code/webapp1/build.sh 
+  - service: app
+    command: ./code/webapp1/build.sh
